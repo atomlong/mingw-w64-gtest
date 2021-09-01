@@ -19,7 +19,7 @@ jobs:
   build-package:
     strategy:
       matrix:
-        arch: ["armv7", "aarch64", "x86_64"]
+        arch: [x86_64]
     runs-on: ubuntu-latest
     name: Build on ${{ matrix.arch }}
     if: github.event.repository.owner.id == github.event.sender.id
